@@ -19,5 +19,18 @@ public class ReverseEachWord {
             revString = revString +reverseWord + " ";
         }
         System.out.println(revString);
+
+    // Second way
+        String str1 = "I Am Princess";
+        String[] parts = str1.split(" ");
+        for (int i = 0; i < parts.length; i++) {
+            String rev = "";
+            for (int j = parts[i].length() - 1; j >= 0; j--) {
+                rev = rev + parts[i].charAt(j);
+            }
+            System.out.print(rev + " ");
+        }
     }
+
+
 }
