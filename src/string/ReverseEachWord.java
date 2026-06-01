@@ -1,5 +1,7 @@
 package string;
 
+import java.io.StringWriter;
+
 public class ReverseEachWord {
     public static void main(String[] args) {
 
@@ -21,16 +23,28 @@ public class ReverseEachWord {
         System.out.println(revString);
 
     // Second way
-        String str1 = "I Am Princess";
-        String[] parts = str1.split(" ");
-        for (int i = 0; i < parts.length; i++) {
+//        String str1 = "I Am Princess";
+//        String[] parts = str1.split(" ");
+//        for (int i = 0; i < parts.length; i++) {
+//            String rev = "";
+//            for (int j = parts[i].length() - 1; j >= 0; j--) {
+//                rev = rev + parts[i].charAt(j);
+//            }
+//            System.out.print(rev + " ");
+//        }
+
+        String s = "I Am Sagar";
+        String[] parts = s.split(" ");
+
+        for(int i = 0; i< parts.length; i++){
             String rev = "";
-            for (int j = parts[i].length() - 1; j >= 0; j--) {
+            for(int j = parts[i].length()-1; j>=0; j--){
                 rev = rev + parts[i].charAt(j);
             }
             System.out.print(rev + " ");
         }
     }
+
 
 
 }

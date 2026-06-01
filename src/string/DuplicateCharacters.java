@@ -4,7 +4,7 @@ public class DuplicateCharacters {
     public static void main(String[] args) {
 
         String s1 = "asadedladdleoloi";
-        s1 = s1.replaceAll("\\s", "");
+//        s1 = s1.replaceAll("\\s", "");
         char[] strArr = s1.toCharArray();
         System.out.println("Duplicate characters are: ");
 
@@ -16,10 +16,10 @@ public class DuplicateCharacters {
                     strArr[j] = '0';
                 }
             }
-
-            if (count > 1 && strArr[i] != '0') {
+             if (count > 1 && strArr[i] != '0') {
                 System.out.print(strArr[i] + " ");
             }
         }
-        }
+
     }
+}

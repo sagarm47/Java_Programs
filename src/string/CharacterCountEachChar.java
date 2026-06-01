@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class CharacterCountEachChar {
     public static void main(String[] args) {
-        String s = "aabbbccc";
+        String s = "aabbbcccc";
 
         Map<Character, Integer> map = new HashMap<Character, Integer>();
         for (int i = 0; i < s.length(); i++) {
@@ -16,5 +16,6 @@ public class CharacterCountEachChar {
             }
         }
         map.forEach((key, value)-> System.out.println(key + " "+ value));
+
     }
 }
